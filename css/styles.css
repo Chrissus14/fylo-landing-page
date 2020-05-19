@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
 @import url('./nav.css');
+@import url('./section-one.css');
 /* font-family: 'Raleway', sans-serif; */
 :root {
   --primary1: hsl(243, 87%, 12%);
@@ -19,6 +20,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   background-color: var(--neutral1);
+  font-size: 18px;
 }
 
 ul {

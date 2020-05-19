@@ -1,0 +1,80 @@
+.row {
+  width: 100%;
+  display: flex;
+}
+.column1 {
+  flex: 0 1 50%;
+  padding: 0 1rem;
+}
+.column2 {
+  flex: 0 1 50%;
+  padding: 0 1rem;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1.6;
+}
+.section h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--primary1);
+  margin-bottom: 1rem;
+}
+.section p {
+  margin-bottom: 1rem;
+}
+.form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.form input {
+  width: 60%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 1rem;
+  margin-left: 0;
+  display: inline-block;
+  border: 1px solid var(--primary1);
+}
+.btn {
+  background: var(--accent1);
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  .column-small {
+    flex: 1 1 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .section {
+    text-align: center;
+    order: 1;
+  }
+  .section h1 {
+    font-size: 1.5rem;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .form input {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    margin: 1rem 1rem;
+    margin-left: 0;
+  }
+  .btn {
+    width: 100%;
+  }
+  .section-img {
+    margin: 2rem 0;
+  }
+}
